@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".sfdghj.DisawarActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_gradient_background"
+        android:elevation="0dp"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_gradient_background"
+            android:contentInsetStart="0dp"
+            android:elevation="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="Gali Desawar"
+            app:titleTextColor="@color/white"></com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/internet_text"
+        android:text="@string/you_are_not_connected_to_internet"
+        android:textColor="@color/white"
+        android:background="@color/warn_red"
+        android:padding="5dp"
+        android:elevation="1dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/main_gradient_background2"
+        android:gravity="center"
+        android:paddingHorizontal="20dp">
+
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:id="@+id/topText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/gali_disawar_game"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:id="@+id/leftD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topText"
+            android:text="@string/left_digit"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:id="@+id/left_d_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topText"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:id="@+id/right_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leftD"
+            android:layout_marginVertical="8dp"
+            android:text="@string/right_digit"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:id="@+id/right_d_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leftD"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="8dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:id="@+id/jodi_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/right_d"
+            android:text="@string/jodi_digit"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:id="@+id/jodi_d_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/right_d"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/chartTableBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jodi_d"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:paddingHorizontal="0dp"
+            android:text="@string/chart"
+            android:textColor="@color/teal_200"
+            app:cornerRadius="0dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="8dp"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bHisBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/teal_200"
+            android:text="@string/bid_his"
+            android:textColor="@color/colorBtnTxt"
+            app:cornerRadius="5dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/wHisBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/teal_200"
+            android:text="@string/win_his"
+            android:textColor="@color/colorBtnTxt"
+            app:cornerRadius="5dp"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/swipe_ref_lyt">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recy_s_l"
+            tools:listitem="@layout/g_d_turnament_layout"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

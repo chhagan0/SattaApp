@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F6F6"
+    tools:context=".sfdghj.UserInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appbarLayout">
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_gradient_background"
+                app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+                app:title="My Profile"
+                app:titleTextColor="@color/white"
+                app:contentInsetStartWithNavigation="0dp"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dataConText"
+            android:text="@string/you_are_not_connected_to_internet"
+            android:textColor="@color/white"
+            android:background="@color/warn_red"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:elevation="1dp"/>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/white">
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_my_profile_icon_01"
+                android:layout_gravity="center"
+                android:layout_marginVertical="40dp"/>
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_pencil_icon_01"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="editBtn"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="@string/name"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/stroke_bg"
+            android:textColor="@color/black"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="5dp"
+            android:lines="1"
+            android:padding="5dp"
+            android:inputType="textPersonName|textCapWords"
+            android:enabled="false"/>
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:layout_marginHorizontal="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/stroke_bg"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            android:hint="@string/enter_your_email"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="5dp"
+            android:enabled="false"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:lines="1"
+            android:textStyle="bold"
+            android:inputType="textEmailAddress"/>
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:layout_marginHorizontal="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/stroke_bg"
+            android:textColor="@color/black"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="5dp"
+            android:inputType="number"
+            android:text="9782128839"
+            android:enabled="false"
+            android:lines="1"/>
+
+        <TextView
+
+android:fontFamily="@font/poppins_medium"
+            android:id="@+id/suBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/push"
+            android:layout_marginHorizontal="55dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            app:cornerRadius="0dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:background="@drawable/card_background4"
+            android:backgroundTint="@color/matka_red"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:onClick="updatBtn"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar"
+        android:visibility="gone"/>
+</RelativeLayout>

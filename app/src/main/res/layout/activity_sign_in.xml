@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_gradient_background"
+    tools:context=".sfdghj.SignInActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataConText"
+        android:text="@string/you_are_not_connected_to_internet"
+        android:textColor="@color/white"
+        android:background="@color/warn_red"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:elevation="1dp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                app:cardCornerRadius="80dp"
+                android:layout_gravity="center_horizontal"
+                app:cardBackgroundColor="@color/cardBackColor">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="186dp"
+                    android:layout_height="181dp"
+                    android:layout_gravity="center"
+                    android:background="@color/cardBackColor"
+                    android:src="@drawable/logomatka" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                android:textColor="@color/colorBtn"
+                android:layout_gravity="start"
+                android:textSize="25sp"
+                android:layout_marginTop="100dp"
+                android:layout_marginHorizontal="15dp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/editTextColor"
+                android:importantForAutofill="no"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="30dp"
+                android:textCursorDrawable="@drawable/ic_cursor"
+                android:hint="@string/phone_number"
+                android:textColorHint="@color/editTextColor"
+                android:drawableTint="@color/editTextColor"
+                android:singleLine="true"
+                android:drawablePadding="12dp"
+                android:textStyle="bold"
+                android:maxLength="10"
+                android:drawableStart="@drawable/ic_phone_icon_01"
+                android:background="@drawable/rounded_edittext_focused"
+                tools:targetApi="m" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/rounded_edittext_focused">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/in_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/editTextColor"
+                    android:importantForAutofill="no"
+                    android:paddingVertical="12dp"
+                    android:paddingHorizontal="30dp"
+                    android:textCursorDrawable="@drawable/ic_cursor"
+                    android:hint="@string/pass"
+                    android:textColorHint="@color/editTextColor"
+                    android:drawableTint="@color/editTextColor"
+                    android:singleLine="true"
+                    android:drawablePadding="12dp"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/ic_lock_icon_01"
+                    android:background="@color/transparent"
+                    tools:targetApi="m" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/pass_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_visibility_24"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/editTextColor"
+                    android:layout_marginHorizontal="20dp"
+                    android:onClick="passToggle"/>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_pass"
+                android:textColor="@color/textViewColor"
+                android:layout_gravity="end"
+                android:padding="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginEnd="15dp"
+                android:onClick="forPass"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cornerRadius="23dp"
+                android:text="@string/sign_in"
+                android:textColor="@color/btnTextColor"
+                android:textSize="18sp"
+                android:backgroundTint="@color/btnColor"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="10dp"
+                android:onClick="SignInBtn"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cornerRadius="23dp"
+                android:text="@string/no_account"
+                android:textColor="@color/btnTextColor"
+                android:backgroundTint="@color/btnColor"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="10dp"
+                android:onClick="registerClick"/>
+
+<!--
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/don_t_have_an_account_register"
+                android:textColor="@color/logInTextColor"
+                android:textSize="12sp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:onClick="registerClick"/>
+-->
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar"
+        android:indeterminateTint="@color/editTextColor"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

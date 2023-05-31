@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_gradient_background"
+    tools:context=".sfdghj.SPinActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataConText"
+        android:text="@string/you_are_not_connected_to_internet"
+        android:textColor="@color/white"
+        android:background="@color/warn_red"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:elevation="1dp"/>
+
+
+    <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_security_pin"
+        android:textColor="@color/textViewColor"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="30dp"
+        android:layout_above="@id/checkBoxLay"/>
+
+    <LinearLayout
+        android:id="@+id/checkBoxLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@id/keyboard"
+        android:animateLayoutChanges="true"
+        android:layout_centerHorizontal="true">
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:animateLayoutChanges="true"
+            android:theme="@style/MyCheckBox"
+            android:clickable="false"/>
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:animateLayoutChanges="true"
+            android:theme="@style/MyCheckBox"
+            android:layout_marginHorizontal="10dp"
+            android:clickable="false"/>
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:animateLayoutChanges="true"
+            android:theme="@style/MyCheckBox"
+            android:clickable="false"/>
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:animateLayoutChanges="true"
+            android:theme="@style/MyCheckBox"
+            android:layout_marginStart="10dp"
+            android:clickable="false"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/keyboard"
+        android:layout_above="@id/resetPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="true">
+            <LinearLayout
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="button1"
+                tools:ignore="OnClick,UsingOnClickInXml">
+                <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/digit_1"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_bg"
+                    android:textColor="@color/textViewColor" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="button2"
+                tools:ignore="OnClick,UsingOnClickInXml">
+                <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/digit_2"
+                    android:background="@drawable/circle_bg"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@color/textViewColor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="button3"
+                tools:ignore="OnClick,UsingOnClickInXml">
+                <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/digit_3"
+                    android:background="@drawable/circle_bg"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@color/textViewColor" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="30dp"
+            android:baselineAligned="true">
+            <LinearLayout
+                android:id="@+id/btn4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="button4"
+                tools:ignore="OnClick,UsingOnClickInXml">
+                <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/digit_4"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_bg"
+                    android:textColor="@color/textViewColor" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="button5"
+                tools:ignore="OnClick,UsingOnClickInXml">
+                <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/digit_5"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_bg"
+                    android:textColor="@color/textViewColor" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="button6"
+                tools:ignore="OnClick,UsingOnClickInXml">
+                <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/digit_6"
+                    android:textSize="18sp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:textColor="@color/textViewColor" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="true">
+            <LinearLayout
+                android:id="@+id/btn7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="button7"
+                tools:ignore="OnClick,UsingOnClickInXml">
+                <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/digit_7"
+                    android:background="@drawable/circle_bg"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@color/textViewColor" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="button8"
+                tools:ignore="OnClick,UsingOnClickInXml">
+                <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/digit_8"
+                    android:background="@drawable/circle_bg"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@color/textViewColor" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="button9"
+                tools:ignore="OnClick,UsingOnClickInXml">
+                <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/digit_9"
+                    android:textSize="18sp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:textColor="@color/textViewColor" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="30dp"
+            android:baselineAligned="true">
+            <LinearLayout
+                android:id="@+id/btnClear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="btnClr"
+                android:visibility="invisible"
+                tools:ignore="OnClick,UsingOnClickInXml">
+                <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                    android:id="@+id/textClear"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/clear"
+                    android:textColor="@color/textViewColor"
+                    android:gravity="center"
+                    android:background="@drawable/circle_bg"
+                    android:layout_gravity="center_vertical"
+                    android:paddingVertical="10dp"
+                    android:textSize="18sp"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="button0"
+                tools:ignore="OnClick,UsingOnClickInXml">
+                <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/digit_0"
+                    android:gravity="center"
+                    android:background="@drawable/circle_bg"
+                    android:textColor="@color/textViewColor" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btnDelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="btnDlt"
+                tools:ignore="OnClick,UsingOnClickInXml">
+                <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/remove"
+                    android:textColor="@color/textViewColor"
+                    android:gravity="center"
+                    android:background="@drawable/circle_bg"
+                    android:paddingVertical="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+        android:id="@+id/resetPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="?attr/selectableItemBackground"
+        android:onClick="resetPin"
+        android:padding="10dp"
+        android:text="@string/pin_reset"
+        android:textColor="@color/textViewColor" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar"
+        android:indeterminateTint="@color/editTextColor"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:background="@color/white">
+    <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/select_withdraw_method"
+        android:textSize="18sp"
+        android:paddingHorizontal="10dp"/>
+    <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+        android:id="@+id/bankDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_withdraw_method"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:onClick="bankDeails"
+        android:visibility="gone"/>
+    <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+        android:id="@+id/paytmUpi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_withdraw_method"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:onClick="payTmUpi"
+        android:visibility="gone"/>
+    <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+        android:id="@+id/phonePeUpi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_withdraw_method"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:onClick="phonePeUpi"
+        android:visibility="gone"/>
+    <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+        android:id="@+id/googlePayUpi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_withdraw_method"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:onClick="googlepayUpi"
+        android:visibility="gone"/>
+</LinearLayout>

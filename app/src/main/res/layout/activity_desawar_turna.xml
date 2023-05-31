@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".sfdghj.DesawarTurnaActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbarLayout">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tool_bar"
+            android:background="@color/teal_200"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:titleTextColor="@color/white"
+            app:title="Game"
+            app:contentInsetStartWithNavigation="0dp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/internet_text"
+        android:text="@string/you_are_not_connected_to_internet"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:background="@color/warn_red"
+        android:padding="5dp"
+        android:elevation="1dp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/leftD"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_left_arrow"
+                    android:onClick="leftDigit"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/RightD"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_right_arrow"
+                    android:onClick="rightDigit"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+            </LinearLayout>
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/JodiD"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/icon_jodi_digit"
+                android:onClick="jodiDigit"
+                android:layout_gravity="center_horizontal"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:forceDarkAllowed="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SattaMatka"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:node="merge"
+        tools:targetApi="m">
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.SLTurnamentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.PlayingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.TurnamentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.UserHelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.GameValuesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.WonHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.TableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.UPIDActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.BActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.PMethodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.TakeOutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.AddCoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.SPinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.NewPassActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.ForPassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.VerifyingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.RegistrationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.SignInActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.WelcomeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.DashboardActivity"
+            android:forceDarkAllowed="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.TCoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.SLBPActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.madhurmilan.milan.activityclass.WebSiteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.madhurmilan.milan.activityclass.OTPActivity" />
+        <activity android:name="com.madhurmilan.milan.activityclass.DesawarBPActivity" />
+        <activity android:name="com.madhurmilan.milan.activityclass.DesawarTurnaActivity" />
+        <activity android:name="com.madhurmilan.milan.activityclass.DisawarActivity" />
+
+        <service
+            android:name="com.madhurmilan.milan.shareprefclass.YourService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="@string/razor_pay_key" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

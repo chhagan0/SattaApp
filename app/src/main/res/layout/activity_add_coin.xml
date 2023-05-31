@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".sfdghj.AddCoinActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <LinearLayout
+            android:id="@+id/topLyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/appbarLayout">
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_gradient_background"
+                    app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+                    app:titleTextColor="@color/white"
+                    app:title="Add Funds"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetStart="0dp"
+                    app:contentInsetStartWithNavigation="0dp"
+                    android:contentInsetStart="0dp"/>
+            </com.google.android.material.appbar.AppBarLayout>
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dataConText"
+                android:text="@string/you_are_not_connected_to_internet"
+                android:textColor="@color/white"
+                android:background="@color/warn_red"
+                android:padding="5dp"
+                android:elevation="1dp"
+                android:visibility="gone"/>
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:text="@string/coins"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputCoins"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/dark_border"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:paddingVertical="10dp"
+                android:hint="@string/enter_points"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:maxLength="10"
+                android:singleLine="true" />
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp">
+                <RadioButton
+                    android:visibility="gone"
+                    android:id="@+id/GPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="4dp"
+                    android:padding="4dp"
+                    android:gravity="center_vertical"
+                    android:background="#f3f3f3"
+                    android:text="@string/google_pay"
+                    android:drawableEnd="@drawable/ic_google_pay_or_tez"/>
+                <RadioButton
+                    android:visibility="gone"
+                    android:id="@+id/phone_pe_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="4dp"
+                    android:padding="4dp"
+                    android:gravity="center_vertical"
+                    android:background="#f3f3f3"
+                    android:text="@string/phonepe"
+                    android:drawableEnd="@drawable/ic_phonepe_logo"/>
+                <RadioButton
+                    android:visibility="gone"
+                    android:id="@+id/payTmBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="4dp"
+                    android:padding="4dp"
+                    android:gravity="center_vertical"
+                    android:background="#f3f3f3"
+                    android:drawableEnd="@drawable/ic_paytm_logo_wine"
+                    android:text="@string/paytm"/>
+
+                <RadioButton
+                    android:id="@+id/others"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="4dp"
+                    android:background="#f3f3f3"
+                    android:drawableEnd="@drawable/ic_upi"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:text="@string/other_pay" />
+
+                <RadioButton
+                    android:id="@+id/razorPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="4dp"
+                    android:background="#f3f3f3"
+                    android:drawableEnd="@drawable/ic_upi"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:text="@string/razorpay"
+                    android:visibility="gone" />
+
+            </RadioGroup>
+
+            <TextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/main_gradient_background"
+                android:gravity="center"
+                android:onClick="submitCoins"
+                android:text="@string/pay"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cornerRadius="0dp"
+                tools:ignore="UsingOnClickInXml" />
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressBar"
+            android:visibility="gone"/>
+
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:id="@+id/upiI_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topLyt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/stroke_bg"
+            android:gravity="center"
+            android:onClick="UpiTxtCoppy"
+            android:padding="12dp"
+            android:text="@string/upi_id"
+            android:textColor="@color/green"
+            android:textIsSelectable="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upiI_id"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/stroke_bg"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/if_you_enable_to_pay_please_pay_directly_on_above_upi_id_nor_ncontact_to_admin"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</ScrollView>

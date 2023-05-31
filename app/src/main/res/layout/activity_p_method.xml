@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/main_gradient_background"
+    tools:context=".sfdghj.PMethodActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_gradient_background"
+        android:id="@+id/appbarLayout">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:background="@drawable/main_gradient_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:titleTextColor="@color/white"
+            app:title="Withdraw Method"
+            app:contentInsetStartWithNavigation="0dp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataConText"
+        android:text="@string/you_are_not_connected_to_internet"
+        android:textColor="@color/white"
+        android:background="@color/warn_red"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_below="@id/appbarLayout"
+        android:elevation="1dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bank"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_below="@id/dataConText"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:onClick="Bank">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_bank_payment_icon"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/payTm"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/dataConText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:onClick="paytm"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/paytm" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/phonepe"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        app:cardElevation="5dp"
+        android:layout_below="@id/bank"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="20dp"
+        app:cardCornerRadius="10dp"
+        android:onClick="phonePe">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/phonepe" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/GPay"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/payTm"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="20dp"
+        android:onClick="gPay"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/google_pay" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+</RelativeLayout>

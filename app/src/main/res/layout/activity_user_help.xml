@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".sfdghj.UserHelpActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbarLayout">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@drawable/main_gradient_background"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:titleTextColor="@color/white"
+            app:title="Contact Us"
+            app:contentInsetStartWithNavigation="0dp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataConText"
+        android:text="@string/you_are_not_connected_to_internet"
+        android:textColor="@color/white"
+        android:background="@color/warn_red"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:elevation="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackground"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="15dp"
+        android:onClick="phoneNum1">
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Mobile No."
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"/>
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:id="@+id/phone_num_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_call_wifi_icon_01"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackground"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="15dp"
+        android:onClick="phoneNum2">
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/telegram"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"/>
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:id="@+id/phone_num_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/telegram_logo"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackground"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="15dp"
+        android:onClick="whatsAppBtn">
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/whatsapp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"/>
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:id="@+id/whats_app_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_whatsappicon"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackground"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="15dp"
+        android:onClick="emailBtn">
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"/>
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:id="@+id/emailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_gmail_icon"/>
+
+    </LinearLayout>
+
+</LinearLayout>

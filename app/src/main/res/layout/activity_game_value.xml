@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky"
+    tools:context=".sfdghj.GameValuesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_gradient_background"
+                app:contentInsetStartWithNavigation="0dp"
+                app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+                app:titleTextColor="@color/white" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:id="@+id/dataConText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/warn_red"
+            android:elevation="1dp"
+            android:padding="5dp"
+            android:text="@string/you_are_not_connected_to_internet"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/singleD"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/matka_darkblue2"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+
+                android:paddingVertical="8dp"
+                android:text="@string/single_digit"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/single_d_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:gravity="center|center_vertical"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/jodi_d"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/matka_darkblue2"
+            android:visibility="gone">
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                android:text="@string/jodi_digit"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/jodi_d_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:gravity="center|center_vertical"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/single_p"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/matka_darkblue2"
+            android:visibility="gone">
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                android:text="@string/single_pana"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/single_p_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:gravity="center|center_vertical"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/double_d"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/matka_darkblue2"
+            android:visibility="gone">
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+
+                android:paddingVertical="8dp"
+                android:text="@string/double_digit"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/double_d_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:gravity="center|center_vertical"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/triple_d"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/matka_darkblue2"
+            android:visibility="gone">
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                android:text="@string/triple_digit"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/triple_d_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:gravity="center|center_vertical"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/half_s"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/matka_darkblue2"
+            android:visibility="gone">
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                android:text="@string/half_sangam"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/half_s_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/full_s"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/matka_darkblue2"
+            android:visibility="gone">
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                android:text="@string/full_sangam"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/full_s_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:gravity="center|center_vertical"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/icon"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="50dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/cardBackColor"
+            app:cardCornerRadius="80dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:background="@color/cardBackColor"
+                android:src="@drawable/logomatka" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/how_to_learn_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/white">
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/howToPlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="12dp"
+                android:textColor="@color/black" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/watcch_yt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/red"
+            android:onClick="WatchItOnYoutubeBtn"
+            android:text="@string/watch_it_on_youtube"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar"
+        android:visibility="gone"/>
+
+</RelativeLayout>

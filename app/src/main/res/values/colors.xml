@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#b57428</color><!--header text  color-->
+    <color name="purple_500">#FF4F1515</color>
+    <color name="purple_700">#b57428</color><!--status bar color-->
+    <color name="teal_200">#270015</color><!--toolbar color-->
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="creamBtn">#A4FBD6B3</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#02AF00</color>
+    <color name="warn_red">#ec5645</color>
+    <color name="cream">#feffd5</color>
+    <color name="sky">#dddde5</color>
+    <color name="yellow">#F6BE00</color>
+
+    <color name="editTextColor">#ffffff</color>
+    <color name="btnTextColor">#ffffff</color>
+    <color name="btnColor">#28B5B0</color>
+    <color name="textViewColor">#ffffff</color>
+    <color name="secBoxColor">#ffffff</color>
+    <color name="cardBackColor">#0F4947</color>
+    <color name="colorBtn">#ffffff</color>
+
+    <color name="colorBtnTxt">#ffffff</color>
+
+    <!--geame icon colors-->
+    <color name="lightColor">#b57428</color>
+    <color name="darkColor">#270015</color>
+    <color name="mainTextColor">#ffffff</color>
+    <color name="subTextColor">#ffffff</color>
+    <color name="strokeColor">#5D481C</color>
+
+    <!--geame icon colors-->
+    <color name="primary_color">#FF039897</color>
+    <color name="secondary_color">#FFFFFF</color>
+    <color name="main_text_color">#ffffff</color>
+
+    <!--matka colors-->
+
+    <color name="matka_blue">#3AA5FF</color>
+    <color name="matka_darkblue">#022069</color>
+    <color name="matka_red">#E00815</color>
+
+    <color name="primary_theme_start">#0575E6</color>
+    <color name="primary_theme_end">#021B79</color>
+    <color name="icon_color">#000000</color>
+
+    <color name="matka_ic_green">#3BE374</color>
+    <color name="matka_ic_grey">#EEE8E8</color>
+    <color name="matka_darkblue2">#3842FB</color>
+    <color name="matka_g_orange_1">#FE756D</color>
+    <color name="matka_g_orange_2">#FF8F69</color>
+    <color name="matka_notice_green">#53D010</color>
+
+
+
+</resources>

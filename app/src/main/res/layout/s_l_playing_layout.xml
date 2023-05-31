@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dark_border"
+    android:id="@+id/conformLayout"
+    android:layout_marginHorizontal="2dp"
+    android:layout_marginVertical="2dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:id="@+id/ll_digit"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/txtSize"
+            android:id="@+id/digitsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/digits"
+            android:paddingStart="@dimen/layPadding"
+            android:textColor="@color/black"
+            android:paddingVertical="10dp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/txtSize"
+            android:id="@+id/digit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingHorizontal="@dimen/layPadding"
+            android:paddingVertical="10dp"
+            tools:ignore="RelativeOverlap" />
+    </LinearLayout>
+    <View
+        android:layout_below="@id/ll_digit"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/teal_200"/>
+    <LinearLayout
+        android:layout_below="@id/ll_digit"
+        android:orientation="horizontal"
+        android:id="@+id/ll_points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/txtSize"
+            android:id="@+id/coin_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/points"
+            android:paddingStart="@dimen/layPadding"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingVertical="10dp"
+            tools:ignore="RtlSymmetry" />
+        <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/txtSize"
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingHorizontal="@dimen/layPadding"
+            android:paddingVertical="10dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/crossBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_red_cross_box"/>
+
+</RelativeLayout>

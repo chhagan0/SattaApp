@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp">
+    <RelativeLayout
+        android:layout_margin="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/topReLayt"
+            android:background="@drawable/round_bg_cream">
+
+            <com.romainpiel.shimmer.ShimmerTextView
+                android:id="@+id/gameName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="1dp"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:text="Milan Live"
+                android:textAllCaps="true"
+                android:textColor="@color/teal_200"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topReLayt"
+            android:background="@color/creamBtn"
+            android:padding="10dp">
+
+            <com.romainpiel.shimmer.ShimmerTextView
+                android:id="@+id/marketOpen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:paddingHorizontal="5dp"
+                android:text="Market closed for today"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/gameResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/marketOpen"
+                android:letterSpacing="0.4"
+                android:text="12345677"
+                android:layout_marginHorizontal="40dp"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/closeTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close: 10:30 AM"
+                android:gravity="center"
+                android:layout_below="@id/gameResult"
+                android:drawablePadding="3dp"
+                android:layout_margin="5dp"
+                android:drawableStart="@drawable/ic_clock_svgrepo_com"
+                android:textColor="@color/black"
+                android:layout_alignParentStart="true"/>
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/gamePlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/play_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

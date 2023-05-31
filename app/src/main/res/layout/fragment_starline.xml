@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".dfghjk.StarlineFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:paddingHorizontal="20dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/background_loght">
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/topText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/star_line_game"
+                android:textColor="@color/teal_200"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/singleD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/single_digit"
+                android:textColor="@color/teal_200"
+                android:layout_below="@id/topText"
+                android:textStyle="bold"/>
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/single_d_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/teal_200"
+                android:layout_below="@id/topText"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"/>
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/single_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/single_pana"
+                android:textColor="@color/teal_200"
+                android:layout_below="@id/singleD"
+                android:textStyle="bold"
+                android:layout_marginVertical="8dp"/>
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/single_p_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/teal_200"
+                android:layout_below="@id/singleD"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"
+                android:layout_marginVertical="8dp"/>
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/doP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/double_pana"
+                android:textColor="@color/teal_200"
+                android:layout_below="@id/single_p"
+                android:textStyle="bold"/>
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/double_p_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/teal_200"
+                android:layout_below="@id/single_p"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"/>
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/TriplePana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/triple_pana"
+                android:textColor="@color/teal_200"
+                android:layout_below="@id/doP"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/triple_p_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/teal_200"
+                android:layout_below="@id/doP"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/chartTableBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/triple_p_v"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/teal_200"
+                android:gravity="center"
+                android:paddingHorizontal="0dp"
+                android:text="@string/chart"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+
+android:fontFamily="@font/poppins_medium"
+            android:id="@+id/bHisBtn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/card_background3"
+            android:backgroundTint="#EA2929"
+            android:gravity="center"
+            android:text="@string/bid_his"
+            android:textColor="@color/white" />
+
+        <TextView
+
+android:fontFamily="@font/poppins_medium"
+            android:id="@+id/wHisBtn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/card_background3"
+            android:backgroundTint="#EA2929"
+            android:gravity="center"
+            android:text="@string/win_his"
+            android:textColor="@color/white"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recy_s_l"
+        tools:listitem="@layout/s_l_turnament_layout"/>
+
+</LinearLayout>

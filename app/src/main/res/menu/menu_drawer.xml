@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:title="@string/dashboard"
+        android:id="@+id/home"
+        android:orderInCategory="0"
+        android:icon="@drawable/home"/>
+
+    <item android:title="@string/profile"
+        android:id="@+id/profile"
+        android:visible="false">
+        <menu>
+            <group>
+
+                <item android:title="@string/full_profile"
+                    android:id="@+id/seeFullProfile"
+                    android:icon="@drawable/profile"
+                    android:orderInCategory="1"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/vault"
+        android:id="@+id/purse"
+        android:visible="false">
+        <menu>
+            <group >
+                <item android:title="@string/add_funds"
+                    android:id="@+id/addFunds"
+                    android:icon="@drawable/add_funds1"/>
+                <item android:title="@string/coins_withdraw"
+                    android:id="@+id/withdrawPoints"
+                    android:icon="@drawable/withdraw1"/>
+                <item android:title="@string/wallet_statement"
+                    android:id="@+id/walletStatement"
+                    android:icon="@drawable/wallet1"/>
+                <item android:title="@string/transfer_points"
+                    android:id="@+id/transferPoints"
+                    android:icon="@drawable/transfer_points1"/>
+                <item android:title="@string/win_his"
+                    android:id="@+id/winHistory"
+                    android:icon="@drawable/win_history1"
+                    android:orderInCategory="2"/>
+                <item android:title="@string/bid_his"
+                    android:id="@+id/bidHistory"
+                    android:icon="@drawable/bid_history1"
+                    android:orderInCategory="3"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/bank_account"
+        android:id="@+id/bank_ac"
+        android:visible="false">
+        <menu>
+            <group>
+                <item android:title="@string/manage_bank_details"
+                    android:id="@+id/manageBank"
+                    android:icon="@drawable/bank1"/>
+                <item android:title="@string/manage_paytm"
+                    android:id="@+id/managePaytm"
+                    android:icon="@drawable/bank2"/>
+                <item android:title="@string/manage_google_pay"
+                    android:id="@+id/manageGooglePay"
+                    android:icon="@drawable/bank2"/>
+                <item android:title="@string/manage_phonepe"
+                    android:id="@+id/managePhonePe"
+                    android:icon="@drawable/bank2"/>
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="@string/more">
+        <menu>
+            <group>
+                <item android:title="@string/rates"
+                    android:id="@+id/game_values"
+                    android:icon="@drawable/rate1"
+                    android:orderInCategory="4"
+                    android:visible="false"/>
+                <item android:title="@string/how_play"
+                    android:id="@+id/how_to_learn"
+                    android:icon="@drawable/play1"
+                    android:orderInCategory="5"
+                    android:visible="false"/>
+                <item android:title="@string/contact_uss"
+                    android:id="@+id/contactUs"
+                    android:icon="@drawable/contact_us1"
+                    android:visible="false"
+                    android:orderInCategory="6"/>
+                <item android:title="@string/share_friends"
+                    android:id="@+id/shareWithFriends"
+                    android:icon="@drawable/share1"
+                    android:orderInCategory="7"/>
+                <item android:title="@string/app_rates"
+                    android:id="@+id/rateApp"
+                    android:icon="@drawable/star_rate"
+                    android:orderInCategory="8"/>
+                <item android:title="@string/change_pass"
+                    android:id="@+id/changePassword"
+                    android:icon="@drawable/change_password1"
+                    android:orderInCategory="9"
+                    android:visible="false"/>
+                <item android:title="@string/signout"
+                    android:id="@+id/logout"
+                    android:icon="@drawable/logout1"
+                    android:orderInCategory="10"/>
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_gradient_background"
+    tools:context=".sfdghj.OTPActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataConText"
+        android:text="@string/you_are_not_connected_to_internet"
+        android:textColor="@color/white"
+        android:background="@color/warn_red"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:elevation="1dp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                app:cardBackgroundColor="@color/cardBackColor"
+                app:cardCornerRadius="80dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="197dp"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center"
+                    android:background="@color/cardBackColor"
+                    android:src="@drawable/logomatka" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/mtv_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/signup"
+                android:textColor="@color/btnTextColor"
+                android:textSize="25sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_num"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/rounded_edittext_focused"
+                android:drawableStart="@drawable/ic_phone_icon_01"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/editTextColor"
+                android:hint="@string/enter_mobile_number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="12dp"
+                android:singleLine="true"
+                android:enabled="false"
+                android:textColor="@color/editTextColor"
+                android:textColorHint="@color/editTextColor"
+                android:textCursorDrawable="@drawable/ic_cursor"
+                android:textStyle="bold"
+                tools:targetApi="m" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/rounded_edittext_focused">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/in_pc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:hint="OTP"
+                    android:inputType="numberSigned"
+                    android:maxLength="4"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="12dp"
+                    android:singleLine="true"
+                    android:textColor="@color/editTextColor"
+                    android:textColorHint="@color/editTextColor"
+                    android:textCursorDrawable="@drawable/ic_cursor"
+                    android:textStyle="bold"
+                    tools:targetApi="m" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/pass_tpc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="20dp"
+                    android:onClick="passTogglePin"
+                    android:src="@drawable/ic_baseline_visibility_off_24"
+                    android:tint="@color/editTextColor" />
+            </RelativeLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:onClick="resendOtp"
+                android:text="Resend Otp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/btnColor"
+                android:onClick="verifyOtp"
+                android:paddingVertical="12dp"
+                android:text="Verify OTP"
+                android:textAllCaps="false"
+                android:textColor="@color/btnTextColor"
+                android:textSize="18sp"
+                app:cornerRadius="30dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/editTextColor"
+        android:visibility="gone"/>
+</RelativeLayout>

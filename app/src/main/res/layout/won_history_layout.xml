@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_bid_history"
+        android:background="@drawable/ic_green_border_line"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1.8"
+            android:paddingStart="20dp"
+            android:paddingEnd="3dp"
+            android:paddingVertical="5dp">
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/gameName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game Name(game type)"
+                android:textColor="@color/black"/>
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/gameNumberOpen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game Number : "
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                tools:ignore="SmallSp" />
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/gameNumberClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game Number : 5"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                tools:ignore="SmallSp"
+                android:visibility="gone"/>
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/gameDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14 Jul 2020 12:51:27 PM"
+                android:textSize="12sp"
+                android:textColor="#777777"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.8"
+            android:paddingStart="3dp"
+            android:paddingEnd="15dp"
+            android:paddingVertical="5dp">
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/gameSession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Session : CLOSE"
+                android:textColor="@color/black"
+                android:textSize="10sp"/>
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/bidPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14 Points"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/teal_200"/>
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/winPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="140 Points"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:textColor="@color/green"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

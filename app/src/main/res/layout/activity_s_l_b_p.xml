@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".sfdghj.PlayingActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbarLayout">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@drawable/main_gradient_background"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:titleTextColor="@color/white"
+            app:contentInsetStartWithNavigation="0dp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataConText"
+        android:text="@string/you_are_not_connected_to_internet"
+        android:textColor="@color/white"
+        android:background="@color/warn_red"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:elevation="1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:id="@+id/ll_bid"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_date"
+                android:textStyle="bold"
+                android:paddingVertical="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="20dp"/>
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/choose_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_border"
+                android:padding="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/digText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/digits"
+                android:textStyle="bold"
+                android:paddingVertical="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="20dp"/>
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/input_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_border"
+                android:hint="@string/enter_digits"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:layout_marginHorizontal="20dp"/>
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/openCD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/digits"
+                android:textStyle="bold"
+                android:paddingVertical="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:visibility="gone"/>
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/inputCD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_border"
+                android:hint="@string/enter_digits"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:layout_marginHorizontal="20dp"
+                android:visibility="gone"/>
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/points"
+                android:textStyle="bold"
+                android:paddingVertical="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="20dp"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputCoins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_border"
+                android:hint="@string/enter_points"
+                android:padding="10dp"
+                android:inputType="number"
+                android:maxLength="9"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="20dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_proceed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/proceed"
+                android:backgroundTint="@color/matka_red"
+                app:cornerRadius="0dp"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/ll_bid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            tools:listitem="@layout/s_l_playing_layout"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@id/ll_bid_bottom"
+            android:id="@+id/recyclerView"/>
+        <LinearLayout
+            android:id="@+id/ll_bid_bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:id="@+id/mtv_total_coins"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Total Points : 0"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pro_conf"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:backgroundTint="@color/teal_200"
+                android:text="@string/proceed"
+                android:gravity="center"
+                android:onClick="proceedConformBtn"/>
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressBar"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

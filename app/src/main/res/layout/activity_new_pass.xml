@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_gradient_background"
+    tools:context=".sfdghj.NewPassActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/backIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:onClick="backBtn"/>
+
+    <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataConText"
+        android:text="@string/you_are_not_connected_to_internet"
+        android:textColor="@color/white"
+        android:background="@color/warn_red"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_below="@id/backIcon"
+        android:elevation="1dp"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                app:cardCornerRadius="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="70dp"
+                app:cardBackgroundColor="@color/cardBackColor">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="185dp"
+                    android:layout_height="186dp"
+                    android:layout_gravity="center"
+                    android:background="@color/cardBackColor"
+                    android:src="@drawable/logomatka" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textview.MaterialTextView
+
+android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_pass"
+                android:textColor="@color/cream"
+                android:layout_gravity="start|center_vertical"
+                android:textSize="25sp"
+                android:layout_marginHorizontal="15dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/rounded_edittext_focused">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputNewPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/editTextColor"
+                    android:paddingVertical="12dp"
+                    android:paddingHorizontal="30dp"
+                    android:hint="@string/enter_new_password"
+                    android:textCursorDrawable="@drawable/ic_cursor"
+                    android:textColorHint="@color/editTextColor"
+                    android:drawableTint="@color/editTextColor"
+                    android:singleLine="true"
+                    android:drawablePadding="12dp"
+                    android:textStyle="bold"
+                    android:maxLength="18"
+                    android:layout_centerVertical="true"
+                    android:drawableStart="@drawable/ic_lock_icon_01"
+                    android:background="@color/transparent"
+                    tools:targetApi="m" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/pass_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/editTextColor"
+                    android:src="@drawable/ic_baseline_visibility_24"
+                    android:layout_marginHorizontal="20dp"
+                    android:onClick="passToggle"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/rounded_edittext_focused">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputConformPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/editTextColor"
+                    android:paddingVertical="12dp"
+                    android:paddingHorizontal="30dp"
+                    android:hint="@string/conform_pass"
+                    android:textColorHint="@color/editTextColor"
+                    android:drawableTint="@color/editTextColor"
+                    android:singleLine="true"
+                    android:drawablePadding="12dp"
+                    android:textCursorDrawable="@drawable/ic_cursor"
+                    android:textStyle="bold"
+                    android:maxLength="18"
+                    android:drawableStart="@drawable/ic_lock_icon_01"
+                    android:background="@color/transparent"
+                    tools:targetApi="m" />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/passToggleEyeConf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/editTextColor"
+                    android:src="@drawable/ic_baseline_visibility_24"
+                    android:layout_marginHorizontal="20dp"
+                    android:onClick="passToggleConf"/>
+
+            </RelativeLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cornerRadius="23dp"
+                android:text="@string/next"
+                android:textColor="@color/btnTextColor"
+                android:textSize="18sp"
+                android:backgroundTint="@color/btnColor"
+                android:textAllCaps="false"
+                android:layout_marginVertical="10dp"
+                android:paddingVertical="10dp"
+                android:onClick="GoChangePassBtn"
+                tools:ignore="UsingOnClickInXml" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:indeterminateTint="@color/editTextColor"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
